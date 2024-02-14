@@ -1,7 +1,6 @@
 # Servidor Multi Streaming
 
-Este projeto fornece um servidor simples para fazer live e transmitir para mais de uma plataforma simultaneamente, implementado utilizando NGINX com suporte aos protocolos RTMP (Real Time Message Protocol)
-Um simples servidor  ✨ Este projeto é compatível apenas com ingests que utilizam o protocolo RTMP.
+Este projeto fornece um servidor simples para fazer live e transmitir para mais de uma plataforma simultaneamente, implementado utilizando NGINX com suporte aos protocolos RTMP (Real Time Message Protocol).
 
 ## Desenvolvimento
 
