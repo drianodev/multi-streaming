@@ -1,0 +1,23 @@
+worker_processes auto;
+
+events {
+    worker_connections 1024;
+}
+
+rtmp {
+    server {
+        listen 1935;
+
+        application live {
+            # Ativa o streaming ao vivo
+            live on;
+            # Desativa a gravação
+            record off;
+            # Ativa o suporte a HTTP Live Streaming (HLS)
+            hls on;
+
+            push $YOUTUBE_STREAMING_URL/$YOUTUBE_STREAMING_KEY;
+            push $TWITCH_STREAMING_URL/$TWITCH_STREAMING_KEY;
+        }
+    }
+}
